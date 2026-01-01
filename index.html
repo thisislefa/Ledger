@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ledger - Real Time</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <a href="#" class="logo">Ledger</a>
+                <div class="header-right">
+                    <span class="date" id="current-date">Loading date...</span>
+                    <a href="#" class="subscribe-btn">Subscribe</a>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar">
+            <div class="container">
+                <ul>
+                    <li><a href="#" onclick="fetchNews('general')">Home</a></li>
+                    <li><a href="#" onclick="fetchNews('business')">Business</a></li>
+                    <li><a href="#" onclick="fetchNews('sports')">Sport</a></li>
+                    <li><a href="#" onclick="fetchNews('technology')">Tech</a></li>
+                    <li><a href="#" onclick="fetchNews('entertainment')">Culture</a></li>
+                    <li><a href="#" onclick="fetchNews('health')">Health</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-grid" id="hero-container">
+                    <div class="loading">Loading Top Stories...</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="latest-news">
+            <div class="container">
+                <h2 class="section-title">Latest News <a href="#">View All</a></h2>
+                <div class="news-grid" id="latest-news-grid">
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-article-section">
+            <div class="container">
+                <div class="featured-grid">
+                    <div class="featured-content">
+                        <div class="article-meta">
+                            <span class="category">FEATURED</span>
+                        </div>
+                        <h2>The Future of AI: How Deep Learning is Transforming Industries</h2>
+                        <p class="article-excerpt" style="color: #eee; margin-top: 10px;">
+                            We take a deep dive into the neural networks powering the next generation of software, from healthcare diagnostics to autonomous driving.
+                        </p>
+                        <br>
+                        <a href="#" class="read-more">Read the full story
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="#ffffff" d="M16.175 13H4v-2h12.175l-5.6-5.6L12 4l8 8l-8 8l-1.425-1.4l5.6-5.6Z"/></svg>
+                        </a>
+                    </div>
+                    <div class="featured-image">
+                        <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=1000&auto=format&fit=crop" alt="AI Feature">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="technology-section">
+            <div class="container">
+                <h2 class="section-title">Technology <a href="#">View All</a></h2>
+                <div class="tech-grid" id="tech-grid">
+                    </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="#" class="logo" style="color:white">Ledger</a>
+                    <p style="color: #aaa; font-size: 14px; margin-top: 10px;">Your trusted source for real-time news.</p>
+                </div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Ledger. Powered by NewsAPI.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
