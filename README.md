@@ -1,4 +1,4 @@
-# Ledger | Real-Time News Platform
+# Ledger
 
 ## Project Overview
 
@@ -491,5 +491,3 @@ This project is licensed under the MIT License. NewsAPI terms of service apply t
 ---
 
 *Ledger demonstrates enterprise-grade news platform architecture with modern web development practices. The platform serves as both a functional news aggregator and an educational resource for API integration, responsive design, and performance optimization.*
- 
- 
