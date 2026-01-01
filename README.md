@@ -14,9 +14,9 @@ Ledger is a sophisticated, production-ready news aggregation platform that demon
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                    Client-Side Application                   │
+│                    Client-Side Application                  │
 ├─────────────────────────────────────────────────────────────┤
-│  Presentation Layer   │   Business Logic    │   Data Layer   │
+│  Presentation Layer  │   Business Logic    │   Data Layer   │
 ├──────────────────────┼─────────────────────┼────────────────┤
 │  • HTML5 Semantics   │  • API Integration  │  • NewsAPI     │
 │  • CSS3 Grid/Flex    │  • State Management │  • Local Cache │
