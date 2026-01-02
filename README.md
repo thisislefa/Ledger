@@ -8,7 +8,7 @@ A pixel-perfect, high-performance news application built with a focus on clean m
 
 ## Interface Preview
 
-An overview of the Ledger News Portal.
+This preview showcases the comprehensive news feed as rendered in a local development environment. On production domains, the system is engineered to detect API security restrictions and provide an informative diagnostic message in place of this live feed.
 
 <img width="1920" height="4605" alt="Ledger" src="https://github.com/user-attachments/assets/d2b00829-e99b-46af-bb1a-afa609cae616" />
 
