@@ -229,16 +229,116 @@
 
         // Error Handler
         function handleError() {
-            const warning = `<div class="error-msg">
-                <h3>⚠ Content could not be loaded</h3>
-                <p>If you are running this file locally, ensure you are using a <strong>Local Server</strong> (like VS Code Live Server). NewsAPI blocks direct file:// access and requires an API Key.</p>
-            </div>`;
-            document.getElementById('hero-container').innerHTML = warning;
-        }
+    const errorHTML = `
+        <div class="error-container">
+            <h3>Feed Temporarily Unavailable</h3>
+            <p>
+                To protect security, NewsAPI's free tier restricts live data requests to 
+                <strong>localhost</strong> environments. 
+            </p>
+            <div class="step-box">
+                <strong>To view this project with live data:</strong>
+                <ol style="margin-top:10px; margin-left:20px;">
+                    <li>Clone this repository from GitHub.</li>
+                    <li>Open the project in VS Code.</li>
+                    <li>Launch it using the <code>Live Server</code> extension.</li>
+                    <li>Ensure your API Key is active in <code>index.html</code>.</li>
+                </ol>
+            </div>
+            <p style="margin-top:20px; font-size: 12px; color: #718096;">
+                <i>Note: This is a restriction of the NewsAPI Free Tier, not the codebase.</i>
+            </p>
+        </div>
+    `;
+    
+    // Inject into the main containers
+    document.getElementById('hero-container').innerHTML = errorHTML;
+    document.getElementById('latest-news-grid').innerHTML = '';
+}
 
         // Initial Load
         fetchNews();
     </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <style>
+        /* Enhanced Error State Styling */
+.error-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff5f5;
+    border: 1px solid #feb2b2;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.error-container h3 {
+    color: #c53030;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.error-container p {
+    color: #4a5568;
+    margin-bottom: 20px;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.step-box {
+    text-align: left;
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 14px;
+    border: 1px solid #edf2f7;
+}
+
+.step-box code {
+    background: #edf2f7;
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-family: monospace;
+}
+    </style>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </body>
 </html>
