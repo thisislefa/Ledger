@@ -230,30 +230,35 @@
         // Error Handler
         function handleError() {
     const errorHTML = `
-        <div class="error-container">
+        <div class="error-text-box">
             <h3>Feed Temporarily Unavailable</h3>
             <p>
-                To protect security, NewsAPI's free tier restricts live data requests to 
-                <strong>localhost</strong> environments. 
+                To protect security, NewsAPI restricts live data requests to 
+                <code>localhost</code> environments on their free plans. 
             </p>
-            <div class="step-box">
-                <strong>To view this project with live data:</strong>
-                <ol style="margin-top:10px; margin-left:20px;">
-                    <li>Clone this repository from GitHub.</li>
-                    <li>Open the project in VS Code.</li>
-                    <li>Launch it using the <code>Live Server</code> extension.</li>
-                    <li>Ensure your API Key is active in <code>index.html</code>.</li>
-                </ol>
-            </div>
-            <p style="margin-top:20px; font-size: 12px; color: #718096;">
-                <i>Note: This is a restriction of the NewsAPI Free Tier, not the codebase.</i>
+            <p>
+                <strong>To view this project with live news:</strong><br>
+                1. Clone this repository to your local machine.<br>
+                2. Open the project in VS Code.<br>
+                3. Right-click <code>index.html</code> and select "Open with Live Server".
+            </p>
+            <p style="color: #666; font-size: 14px;">
+                Note: Requests made directly from <code>github.io</code> are blocked by the API provider's security policy. This is a restriction of the NewsAPI Free Tier, not the codebase.
             </p>
         </div>
     `;
     
-    // Inject into the main containers
-    document.getElementById('hero-container').innerHTML = errorHTML;
-    document.getElementById('latest-news-grid').innerHTML = '';
+    // Select the container and inject the text
+    const container = document.getElementById('hero-container');
+    if (container) {
+        container.innerHTML = errorHTML;
+    }
+
+    // Clear the secondary news grid so it doesn't show "loading" forever
+    const latestGrid = document.getElementById('latest-news-grid');
+    if (latestGrid) {
+        latestGrid.innerHTML = '';
+    }
 }
 
         // Initial Load
@@ -276,46 +281,39 @@
 
 
     <style>
-        /* Enhanced Error State Styling */
-.error-container {
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 30px;
-    background-color: #fff5f5;
-    border: 1px solid #feb2b2;
-    border-radius: 12px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-}
+        /* Container for the error text */
+        #hero-container {
+            display: block;          /* Standard block display for left alignment */
+            text-align: left;        /* Aligns text to the left */
+            padding: 40px 0;
+            width: 100%;
+            min-height: 300px;
+        }
 
-.error-container h3 {
-    color: #c53030;
-    margin-bottom: 15px;
-    font-size: 22px;
-}
+        /* Style for the plain text message */
+        .error-text-box {
+            color: #1a1a1a;          /* Dark, readable text */
+            font-family: var(--font-inter);
+            max-width: 800px;
+        }
 
-.error-container p {
-    color: #4a5568;
-    margin-bottom: 20px;
-    font-size: 15px;
-    line-height: 1.6;
-}
+        .error-text-box h3 {
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
 
-.step-box {
-    text-align: left;
-    background: #fff;
-    padding: 15px;
-    border-radius: 8px;
-    font-size: 14px;
-    border: 1px solid #edf2f7;
-}
+        .error-text-box p {
+            margin-bottom: 15px;
+            font-size: 16px;
+            line-height: 1.5;
+        }
 
-.step-box code {
-    background: #edf2f7;
-    padding: 2px 4px;
-    border-radius: 4px;
-    font-family: monospace;
-}
+        .error-text-box code {
+            background: #f4f4f4;
+            padding: 2px 5px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
     </style>
 
     
