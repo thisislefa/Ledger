@@ -1,4 +1,4 @@
-# Ledger - Advanced Real-Time News Portal
+# Ledger
 
 A pixel-perfect, high-performance news application built with a focus on clean modular architecture and real-time data integration. This project demonstrates advanced CSS layout techniques (Grid & Flexbox), asynchronous JavaScript, and the handling of production-level API restrictions.
 
