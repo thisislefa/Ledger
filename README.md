@@ -14,7 +14,7 @@ This preview showcases the comprehensive news feed as rendered in a local develo
 
 ## Technical Architecture
 
-### System Architecture Diagram
+System Architecture Diagram:
 
 ┌─────────────────────────────────────────────────────────────┐
 │                    Client-Side Application                  │
