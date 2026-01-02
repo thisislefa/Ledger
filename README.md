@@ -10,7 +10,7 @@ A pixel-perfect, high-performance news application built with a focus on clean m
 
 This preview showcases the comprehensive news feed as rendered in a local development environment. On production domains, the system is engineered to detect API security restrictions and provide an informative diagnostic message in place of this live feed.
 
-<img width="1920" height="4605" alt="Ledger" src="https://github.com/user-attachments/assets/d2b00829-e99b-46af-bb1a-afa609cae616" />
+<img width="1920" height="4866" alt="Ledger" src="https://github.com/user-attachments/assets/cd72c2f9-9d2a-4585-9474-d151f2a362dd" />
 
 ## Features
 
