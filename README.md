@@ -1,7 +1,3 @@
-This is a comprehensive, advanced `README.md` tailored for your GitHub portfolio. It explains the design architecture, the technical challenges regarding the News API, and provides clear instructions for others to run your project.
-
----
-
 # Ledger - Advanced Real-Time News Portal
 
 A pixel-perfect, high-performance news application built with a focus on clean modular architecture and real-time data integration. This project demonstrates advanced CSS layout techniques (Grid & Flexbox), asynchronous JavaScript, and the handling of production-level API restrictions.
@@ -50,8 +46,8 @@ To experience the full functionality with live data, follow these steps:
 
 1. **Clone the Repository**:
 ```bash
-git clone https://github.com/your-username/ledger-news.git
-cd ledger-news
+git clone https://github.com/thisislefa/Ledger.git
+cd Ledger
 
 ```
 
