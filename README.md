@@ -12,21 +12,6 @@ This preview showcases the comprehensive news feed as rendered in a local develo
 
 <img width="1920" height="4866" alt="Ledger" src="https://github.com/user-attachments/assets/cd72c2f9-9d2a-4585-9474-d151f2a362dd" />
 
-## Technical Architecture
-
-System Architecture Diagram:
-
-┌─────────────────────────────────────────────────────────────┐
-│                    Client-Side Application                  │
-├─────────────────────────────────────────────────────────────┤
-│  Presentation Layer  │   Business Logic    │   Data Layer   │
-├──────────────────────┼─────────────────────┼────────────────┤
-│  • HTML5 Semantics   │  • API Integration  │  • NewsAPI     │
-│  • CSS3 Grid/Flex    │  • State Management │  • Local Cache │
-│  • Responsive Design │  • Error Handling   │  • Fallbacks   │
-│  • Accessibility     │  • Data Processing  │  • CDN Assets  │
-└──────────────────────┴─────────────────────┴────────────────┘
-
 ## Features
 
 * **Real-Time Data**: Integrates with the News API to fetch the latest global headlines across multiple categories (Business, Tech, Sports, etc.).
