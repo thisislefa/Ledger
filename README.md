@@ -17,15 +17,15 @@ A pixel-perfect, high-performance news application built with a focus on clean m
 
 ## Technical Stack
 
-* **HTML5**: Semantic structure for SEO and accessibility.
-* **CSS3 (Advanced)**:
+**HTML5**: Semantic structure for SEO and accessibility.
+**CSS3 (Advanced)**:
 * Custom CSS Variables for design system consistency.
 * Complex CSS Grid for the Hero and News sections.
 * `clamp()` and relative units for fluid typography.
 * Keyframe animations for loading and error states.
 
 
-* **JavaScript (ES6+)**:
+**JavaScript (ES6+)**:
 * `Async/Await` for non-blocking API calls.
 * `DOM Manipulation` for dynamic UI updates.
 * `Date` and `Time` utility functions for relative timestamps.
