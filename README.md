@@ -6,6 +6,12 @@ A pixel-perfect, high-performance news application built with a focus on clean m
 
 *Note: Due to API provider security policies, live news fetching is restricted to local environments. See the [API Deployment Limitations](https://www.google.com/search?q=%23-api-deployment-limitations) section for details. [Click here to see the news portal anyway.](https://thisislefa.github.io/Ledger)*
 
+## Interface Preview
+
+An overview of the Ledger News Portal.
+
+<img width="1920" height="4605" alt="Ledger" src="https://github.com/user-attachments/assets/d2b00829-e99b-46af-bb1a-afa609cae616" />
+
 ## Features
 
 * **Real-Time Data**: Integrates with the News API to fetch the latest global headlines across multiple categories (Business, Tech, Sports, etc.).
