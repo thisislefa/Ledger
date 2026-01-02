@@ -4,7 +4,7 @@ A pixel-perfect, high-performance news application built with a focus on clean m
 
 ## Live Demo
 
-*Note: Due to API provider security policies, live news fetching is restricted to local environments. See the [API Deployment Limitations](https://www.google.com/search?q=%23-api-deployment-limitations) section for details.*
+*Note: Due to API provider security policies, live news fetching is restricted to local environments. See the [API Deployment Limitations](https://www.google.com/search?q=%23-api-deployment-limitations) section for details. [Click Here To See the News Portal.](https://thisislefa.github.io/Ledger)*
 
 ## Features
 
