@@ -4,7 +4,7 @@ A pixel-perfect, high-performance news application built with a focus on clean m
 
 ## Live Demo
 
-*Note: Due to API provider security policies, live news fetching is restricted to local environments. See the [API Deployment Limitations](https://www.google.com/search?q=%23-api-deployment-limitations) section for details. [Click here to see the news portal anyway.](https://thisislefa.github.io/Ledger)*
+*Note: Due to API provider security policies, live news fetching is restricted to local environments. See the [API Deployment Limitations](https://www.google.com/search?q=%23-api-deployment-limitations) section for details. [Click here to see the news portal anyway.](https://lefajmofokeng.github.io/Ledger)*
 
 ## Interface Preview
 
@@ -52,7 +52,7 @@ To experience the full functionality with live data, follow these steps:
 
 1. **Clone the Repository**:
 ```bash
-git clone https://github.com/thisislefa/Ledger.git
+git clone https://github.com/lefajmofokeng/Ledger.git
 cd Ledger
 
 ```
